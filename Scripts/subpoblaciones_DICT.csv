@@ -1,0 +1,44 @@
+Variable Name,Variable Label,Datasheet,text,type,length,values
+AN,,DEMO,Identificación del paciente,str,,
+SEXO,,DEMO,Sexo del paciente,str,,"Varon, Mujer; NA"
+EDAD,,DEMO,Edad al inicio del tratamiento de oncología,float64,,
+TUMOR,,DEMO,Tipo de tumor ,str,,MELANOMA; PULMON; NA
+CIRUGÍA_TUMOR_PRIMARIO,,DEMO,"Fecha de la cirugía del tumor primario; de lo contrario ""NO""",date,,NO; fecha
+HISTOLOGIA,,DEMO,Histología del tumor.,str,,PIEL'; 'ADENOCARCINOMA'; 'MUCOSA'; 'ESCAMOSO'; 'ACRAL'; 'DESCONOCIDO'; nan; 'NOS'; '#REF!'
+PDL-1,,DEMO,,object,,
+MUTACIONES,,DEMO,,object,,
+ESTADIO,,DEMO,,str,,II; III: IIIA; IIIB; IIIC; IIID; IV; nan
+EXTENSION,,DEMO,,object,,A; B; C; NA
+METASTASIS,,DEMO,Localización de las metástasis,str,,1 - pulmonar; 2 - hepática; 3 - ósea; 4 - ganglionar; 5 - cerebral; 6 - otro visceral; 7 - piel
+INMUNOTERAPIA,,DEMO,,object,,
+INICIO,,DEMO,Fecha de inicio del tratamiento? ,date,,
+LINEA,,DEMO,,str,,"PRIMERA', 'SEGUNDA', 'ADYUVANCIA', 'TERCERA', nan"
+RESPUESTA PRECOZ,,DEMO,Respuesta precoz,str,,RC - Respuesta completa; RP - respuesta parcial; EE - Enfermedad estable; PD - progresión de la enfermedad
+CICLO,,DEMO,,float64,,
+EAIR,,DEMO,Evento adverso,object,,1 - diarrea; 2 - anemia; 3 - cutaneo; 4 - vulvitis; 5 - astenia; 6 - prurito; 7 - neumonitis; 8 - nefritis; 9 - hipotiroidismo; 10 - insuf;. suprarrenal 11 - nauseas;/vomitos 12 - Pancreatitis; 13 - Artralgias; 14 - Neuropatia;
+GRADO,,DEMO,,object,,
+CORTICOIDES,,DEMO,,object,,
+CICLO EAIR,,DEMO,,float64,,
+TOTAL CICLOS,,DEMO,,float64,,
+RESPUESTA,,DEMO,Respuesta al tratamiento,str,,RC - Respuesta completa; RP - respuesta parcial; EE - Enfermedad estable; PD - progresión de la enfermedad
+ESTADO,,DEMO,Estado del paciente a último seguimiento,str,,VIVO; FALLECIDO; NA
+FECHA MEJOR RESPUESTA,,DEMO,Fecha de la mejor respuesta,date,,
+FIN INMUNOTERAPIA,,DEMO,Fecha de fin de la inmunoterapia,date,,
+FECHA ÚLTIMO SEGUIMIENTO,,DEMO,Fecha del último seguimiento,date,,
+COMENTARIOS,,DEMO,Comentarios,str,,
+LINFO T CD3,,DATA,,int,,
+LINFO T CD4,,DATA,,int,,
+LINFO T CD8,,DATA,,int,,
+LINFO B,,DATA,linfocito B CD19 ,int,,
+LINFO NK,,DATA,,int,,
+LINFO CD45,,DATA,,int,,
+COCIENTE CD4/CD8,,DATA,Cociente calculado entre el conteo de linfocitos T CD4 y CD8,float64,,
+NEUTROPHIL,,DATA,,float64,,
+LYMPHOCYTE,,DATA,,float64,,
+NLR,,DATA,Neutrophil/Lymphocyte Ratio ,float64,,
+LDH,,DATA,,int,,
+PROTEINA S100B,,DATA,,float64,,
+CEA,,DATA,,float64,,
+CYFRA 21.1,,DATA,,float64,,
+SCC,,DATA,Antígeno SCC,float64,,
+CA 15-3,,DATA,,float64,,
